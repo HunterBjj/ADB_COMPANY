@@ -78,9 +78,6 @@ Python-скрипт можно модифицировать так, чтобы �
 
 Пример кода:
 
-python
-Копировать
-Редактировать
 import os
 import psutil
 import time
@@ -125,9 +122,6 @@ ps -eo pid,ppid,cmd | grep '[p]ython' | while read pid ppid cmd; do
 done
 DAG в Airflow:
 
-python
-Копировать
-Редактировать
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
