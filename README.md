@@ -22,7 +22,7 @@ visit_fields = [
    "ym:pv:date",
    "ym:pv:pageViews"
 ]
-fields = ",".join(visit_fields)  # исправлено: разделитель должен быть ','
+fields = ",".join(visit_fields)  
 
 start_date = (date.today() - timedelta(days=1)).strftime("%Y-%m-%d")  
 end_date = date.today().strftime("%Y-%m-%d")
