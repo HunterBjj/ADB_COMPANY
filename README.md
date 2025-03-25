@@ -9,7 +9,6 @@ import requests
 import json
 from datetime import timedelta, date
 
-
 token = 'XXX'
 
 counter_id = 1234567
@@ -110,9 +109,6 @@ Airflow можно настроить так, чтобы он периодиче
 
 Пример Bash-скрипта для Airflow Task:
 
-bash
-Копировать
-Редактировать
 #!/bin/bash
 ps -eo pid,ppid,cmd | grep '[p]ython' | while read pid ppid cmd; do
     if [ "$ppid" -eq 1 ]; then  # Если процесс остался без родителя
@@ -172,9 +168,6 @@ Airflow-мониторинг (BashOperator) — как дополнительн�
 Ограничим максимальное количество параллельно выполняемых DAG’ов с помощью dag_concurrency.
 
 Код для dag_1
-python
-Копировать
-Редактировать
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
@@ -196,9 +189,6 @@ main = PythonOperator(
 
 main
 Код для dag_2
-python
-Копировать
-Редактировать
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
